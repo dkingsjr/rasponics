@@ -8,31 +8,31 @@ from tkinter import *
 
 #functions
 def pumpClick():
-        pumpClick = Label(root, text="Pump\nON", font="none 12 bold", bg='#708090', fg='green')
+        pumpClick = Label(frame, text="Pump\nON", font="none 12 bold", bg='#708090', fg='green')
         pumpClick.grid(row=2, column=0)
     #elif:
     #def pumpClick():
-    #pumpClick = Label(root, text="Pump\nOFF", font="none 12 bold", bg='#708090', fg='red')
+    #pumpClick = Label(frame, text="Pump\nOFF", font="none 12 bold", bg='#708090', fg='red')
     #pumpClick.grid(row=1, column=0)
 
 def fanClick():
-        fanClick = Label(root, text="Fan\nON", font="none 12 bold", bg='#708090', fg='green')
+        fanClick = Label(frame, text="Fan\nON", font="none 12 bold", bg='#708090', fg='green')
         fanClick.grid(row=2, column=1)
 
 def lightClick():
-    lightClick = Label(root, text="Light\nON", font="none 12 bold", bg='#708090', fg='green')
+    lightClick = Label(frame, text="Light\nON", font="none 12 bold", bg='#708090', fg='green')
     lightClick.grid(row=2, column=2)
 
 def ph1Click():
-    ph1Click = Label(root, text="PH UP\nON", font="none 12 bold", bg='#708090', fg='green')
+    ph1Click = Label(frame, text="PH UP\nON", font="none 12 bold", bg='#708090', fg='green')
     ph1Click.grid(row=5, column=0)
 
 def ph2Click():
-    ph2Click = Label(root, text="PH DWN\nON", font="none 12 bold", bg='#708090', fg='green')
+    ph2Click = Label(frame, text="PH DWN\nON", font="none 12 bold", bg='#708090', fg='green')
     ph2Click.grid(row=5, column=1)
 
 def resfilClick():
-    resfilClick = Label(root, text="Fill\nON", font="none 12 bold", bg='#708090', fg='green')
+    resfilClick = Label(frame, text="Fill\nON", font="none 12 bold", bg='#708090', fg='green')
     resfilClick.grid(row=5, column=2)
 
 
