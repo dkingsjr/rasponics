@@ -22,4 +22,5 @@ Organized buttons, added button panel name. Created frame for buttons.
 02112020
 Edited button frame. Added frame for gauges. Attempted to add additional button functions...FAILED.
 
-02122020
+02132020
+Added close button on line 118. Added globals and else/if for the rest of the functions. frame3 was created on line 14 for the button.
