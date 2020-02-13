@@ -1,11 +1,12 @@
 #the window
 from tkinter import *
 
-#define functions
+#test define functions(this is a test only. Leave commented out.)
 #def myClick():
     #myLabel = Label(root, text="The moon is beautiful, isn't it?", font="none 12 bold", bg='#384048', fg='#e8e8e8' )
     #myLabel.grid(row2, column=3)
 
+#functions
 def pumpClick():
         pumpClick = Label(root, text="Pump\nON", font="none 12 bold", bg='#708090', fg='green')
         pumpClick.grid(row=2, column=0)
@@ -35,7 +36,7 @@ def resfilClick():
     resfilClick.grid(row=5, column=2)
 
 
-
+#the window
 root = Tk()
 root.title("RasPonics 1.0")
 root.configure(bg='#384048')
