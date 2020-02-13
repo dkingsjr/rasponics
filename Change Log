@@ -1,0 +1,25 @@
+Beginning annotations:
+Editing on this code has been on and off. There have been many different tests conducted to figure out functionality in the past. This change log will begin at the last remembered edits to code.
+
+02052020
+Began experimenting with buttons.
+
+02062020
+Began experimenting with buttons.
+
+02072020
+Created multiple buttons.
+
+02082020:
+Created label buttons, Experimented with BG, FG, and font colors.
+
+02092020
+Relocated button labels from on the button, to above the button. Experimented with function labels and colors inside the buttons. 
+
+02102020
+Organized buttons, added button panel name. Created frame for buttons.
+
+02112020
+Edited button frame. Added frame for gauges. Attempted to add additional button functions...FAILED.
+
+02122020
