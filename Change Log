@@ -24,3 +24,6 @@ Edited button frame. Added frame for gauges. Attempted to add additional button 
 
 02132020
 Added close button on line 118. Added globals and else/if for the rest of the functions. frame3 was created on line 14 for the button.
+
+02232020
+Removed closed button. Not required. tkinter includes a close button in the upper right hand corner of the window. Redundant and unnecessary code. Added preliminary sliders for adjustment of water flow control for proof of concept. currently Non-operational. Planning on editing for use with pumps and such. Still working through inversion bugs using LED's on GPIO. Added additional frames for more "tidy" code. Still trying to figure out organizing into classes for better code organization.
