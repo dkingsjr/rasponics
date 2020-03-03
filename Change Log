@@ -14,7 +14,8 @@ Created multiple buttons.
 Created label buttons, Experimented with BG, FG, and font colors.
 
 02092020
-Relocated button labels from on the button, to above the button. Experimented with function labels and colors inside the buttons. 
+Relocated button labels from on the button, to above the button. Experimented with function labels and colors
+inside the buttons. 
 
 02102020
 Organized buttons, added button panel name. Created frame for buttons.
@@ -26,4 +27,11 @@ Edited button frame. Added frame for gauges. Attempted to add additional button 
 Added close button on line 118. Added globals and else/if for the rest of the functions. frame3 was created on line 14 for the button.
 
 02232020
-Removed closed button. Not required. tkinter includes a close button in the upper right hand corner of the window. Redundant and unnecessary code. Added preliminary sliders for adjustment of water flow control for proof of concept. currently Non-operational. Planning on editing for use with pumps and such. Still working through inversion bugs using LED's on GPIO. Added additional frames for more "tidy" code. Still trying to figure out organizing into classes for better code organization.
+Removed closed button. Not required. tkinter includes a close button in the upper right hand corner of the window. Redundant and unnecessary code. Added preliminary sliders for adjustment of water flow control for proof of concept. Currently Non-operational. Planning on editing for use with pumps and such. Still working through inversion bugs using LED's on GPIO. Added additional frames for more "tidy" code. Still trying to figure out organizing into classes for better code organization.
+
+03022020
+Added GPIO functionality to buttons, redesigned the button frame contents entirely. Removed button labels on top of buttons and re-engineered to be a simple text label inside each corresponding button. Moved green/red "ON/OFF" labels from inside the buttons to above the buttons. GPIO pin assignments are temporary for the purpose of testing functionality. Buttons function as programmed. Added commented out section dividers with section descriptions until further notice or after we figure out how to divide the code into more manageable classes for cleanliness and ease of access. See read me for future planned developments and testing results from this code.
+
+03022020
+Changelog Supplemental
+To test the button code funtionality, LEDs were used in a mini breadboard with great [unexpected] success. All pin settings are temporary for the purpose of testing via LEDs. Final pin assignments for al devices TBD at a later date. The actual parts to be used with this project will be ordered within the next three (3) months or so (funding dependent) as to begin small scale functionality testing. Current testing being conducted: GUI slider functionality to adjust power settings for variable power parts (pumps, fans, heaters, etc(also tested with success)), Automated light on/off functionality using a TEMT6000 Photovoltaic light sensor, and breaking up the code into classes for ease of access and better organization (currently failing to execute this properly). Will be adding sliders tomorrow (03032020) and testing for functionality.
