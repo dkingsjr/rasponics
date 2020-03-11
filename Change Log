@@ -38,3 +38,7 @@ To test the button code funtionality, LEDs were used in a mini breadboard with g
 
 03112020
 RE-Added Exit button due to improper GPIO cleansing. GPIO now cleared properly upon exit. Added Heater button and functions. Edited on/off labels above buttons.
+
+03112020
+Changelog Supplmental
+I (David), am looking into an initiation splashscreen for the program itself, a splashscreen for the Raspberry Pi initial startup, and looking into an auto-initialization option for the program which automatically starts the program after the Raspbian OS has loaded.
