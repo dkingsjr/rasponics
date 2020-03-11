@@ -35,3 +35,6 @@ Added GPIO functionality to buttons, redesigned the button frame contents entire
 03022020
 Changelog Supplemental
 To test the button code funtionality, LEDs were used in a mini breadboard with great [unexpected] success. All pin settings are temporary for the purpose of testing via LEDs. Final pin assignments for al devices TBD at a later date. The actual parts to be used with this project will be ordered within the next three (3) months or so (funding dependent) as to begin small scale functionality testing. Current testing being conducted: GUI slider functionality to adjust power settings for variable power parts (pumps, fans, heaters, etc(also tested with success)), Automated light on/off functionality using a TEMT6000 Photovoltaic light sensor, and breaking up the code into classes for ease of access and better organization (currently failing to execute this properly). Will be adding sliders tomorrow (03032020) and testing for functionality.
+
+03112020
+RE-Added Exit button due to improper GPIO cleansing. GPIO now cleared properly upon exit. Added Heater button and functions. Edited on/off labels above buttons.
