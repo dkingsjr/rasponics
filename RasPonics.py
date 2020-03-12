@@ -1,48 +1,48 @@
 from tkinter import *
 import RPi.GPIO as GPIO
 
-#from PIL import ImageTk, Image
+from PIL import ImageTk, Image
 #import os
 
 
 #==============================Button Functionality==============
 pwm = None
 
-GPIO8 = 8
+GPIO5 = 5
 GPIO7 = 7
+GPIO8 = 8
 GPIO10 = 10
-GPIO12 = 12
 GPIO11 = 11
-GPIO19 = 19
-GPIO21 = 21
+GPIO12 = 12
+GPIO15 = 15
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(GPIO8, GPIO.OUT)
+GPIO.setup(GPIO5, GPIO.OUT)
 GPIO.setup(GPIO7, GPIO.OUT)
+GPIO.setup(GPIO8, GPIO.OUT)
 GPIO.setup(GPIO10, GPIO.OUT)
-GPIO.setup(GPIO12, GPIO.OUT)
 GPIO.setup(GPIO11, GPIO.OUT)
-#GPIO.setup(GPIO19, GPIO.OUT)
-GPIO.setup(GPIO21, GPIO.OUT)
+GPIO.setup(GPIO12, GPIO.OUT)
+GPIO.setup(GPIO15, GPIO.OUT)
 
-GPIO8_state = True
+GPIO5_state = True
 GPIO7_state = True
+GPIO8_state = True
 GPIO10_state = True
-GPIO12_state = True
 GPIO11_state = True
-#GPIO19_state = True
-GPIO21_state = True
+GPIO12_state = True
+GPIO15_state = True
 
 def pump():
-    global GPIO8_state
-    if GPIO8_state == True:
-        GPIO.output(GPIO8, GPIO8_state)
-        GPIO8_state = False
+    global GPIO5_state
+    if GPIO5_state == True:
+        GPIO.output(GPIO5, GPIO5_state)
+        GPIO5_state = False
         ONlabel = Label(frame4, text="ON", font="none 12", bg='#384048', fg="green")
         ONlabel.grid(row=1, column=0)
     else:
-        GPIO.output(GPIO8, GPIO8_state)
-        GPIO8_state = True
+        GPIO.output(GPIO5, GPIO5_state)
+        GPIO5_state = True
         ONlabel = Label(frame4, text="OFF", font="none 12", bg='#384048',  fg="red")
         ONlabel.grid(row=1, column=0)
 
@@ -62,72 +62,72 @@ def fan():
 
 
 def light():
-    global GPIO10_state
-    if GPIO10_state == True:
-        GPIO.output(GPIO10, GPIO10_state)
-        GPIO10_state = False
+    global GPIO8_state
+    if GPIO8_state == True:
+        GPIO.output(GPIO8, GPIO8_state)
+        GPIO8_state = False
         OFFlabel = Label(frame4, text="ON", font="none 12",  bg='#384048', fg="green")
         OFFlabel.grid(row=1, column=2)
     else:
-        GPIO.output(GPIO10, GPIO10_state)
-        GPIO10_state = True
+        GPIO.output(GPIO8, GPIO8_state)
+        GPIO8_state = True
         OFFlabel = Label(frame4, text="OFF", font="none 12", bg='#384048', fg="red")
         OFFlabel.grid(row=1, column=2)
 
 
 def heat():
-    global GPIO21_state
-    if GPIO21_state == True:
-        GPIO.output(GPIO21, GPIO21_state)
-        GPIO21_state = False
+    global GPIO10_state
+    if GPIO10_state == True:
+        GPIO.output(GPIO10, GPIO10_state)
+        GPIO10_state = False
         OFFlabel = Label(frame4, text="ON", font="none 12",  bg='#384048', fg="green")
         OFFlabel.grid(row=1, column=3)
     else:
-        GPIO.output(GPIO21, GPIO21_state)
-        GPIO21_state = True
+        GPIO.output(GPIO10, GPIO10_state)
+        GPIO10_state = True
         OFFlabel = Label(frame4, text="OFF", font="none 12", bg='#384048', fg="red")
         OFFlabel.grid(row=1, column=3)
         
 def ph1():
-    global GPIO12_state
-    if GPIO12_state == True:
-        GPIO.output(GPIO12, GPIO12_state)
-        GPIO12_state = False
+    global GPIO11_state
+    if GPIO11_state == True:
+        GPIO.output(GPIO11, GPIO11_state)
+        GPIO11_state = False
         ONlabel = Label(frame4, text="ON", font="none 12", bg='#384048', fg="green")
         ONlabel.grid(row=1, column=4)
     else:
-        GPIO.output(GPIO12, GPIO12_state)
-        GPIO12_state = True
+        GPIO.output(GPIO11, GPIO11_state)
+        GPIO11_state = True
         ONlabel = Label(frame4, text="OFF", font="none 12", bg='#384048', fg="red")
         ONlabel.grid(row=1, column=4)
 
 
 def ph2():
-    global GPIO11_state
-    if GPIO11_state == True:
-        GPIO.output(GPIO11, GPIO11_state)
-        GPIO11_state = False
+    global GPIO12_state
+    if GPIO12_state == True:
+        GPIO.output(GPIO12, GPIO12_state)
+        GPIO12_state = False
         OFFlabel = Label(frame4, text="ON", font="none 12", bg='#384048', fg="green")
         OFFlabel.grid(row=1, column=5)
     else:
-        GPIO.output(GPIO11, GPIO11_state)
-        GPIO11_state = True
+        GPIO.output(GPIO12, GPIO12_state)
+        GPIO12_state = True
         OFFlabel = Label(frame4, text="OFF", font="none 12", bg='#384048', fg="red")
         OFFlabel.grid(row=1, column=5)
 
 
-#def resfil():
-   # global GPIO19_state
-    #if GPIO19_state == True:
-       # GPIO.output(GPIO19, GPIO19_state)
-        #GPIO19_state = False
-        #OFFlabel = Label(frame4, text="ON", font="none 12 bold", bg='#384048', fg="green")
-        #OFFlabel.grid(row=4, column=6)
-   # else:
-        #GPIO.output(GPIO19, GPIO19_state)
-        #GPIO19_state = True
-        #OFFlabel = Label(frame4, text="OFF", font="none 12 bold", bg='#384048', fg="red")
-        #OFFlabel.grid(row=4, column=6)
+def resfil():
+    global GPIO15_state
+    if GPIO15_state == True:
+        GPIO.output(GPIO15, GPIO15_state)
+        GPIO15_state = False
+        OFFlabel = Label(frame4, text="ON", font="none 12", bg='#384048', fg="green")
+        OFFlabel.grid(row=1, column=6)
+    else:
+        GPIO.output(GPIO15, GPIO15_state)
+        GPIO15_state = True
+        OFFlabel = Label(frame4, text="OFF", font="none 12", bg='#384048', fg="red")
+        OFFlabel.grid(row=1, column=6)
 
 
         
@@ -192,8 +192,8 @@ ph1.grid(row=2, column=4,padx=5, pady=5)
 ph2 = Button(frame4, padx=5, pady=5, text="PH\nDown", font = "none 12 bold" , bg='#708090', fg='#e8e8e8', command=ph2)
 ph2.grid(row=2, column=5,padx=5, pady=5)
 
-#resfil = Button(frame4, padx=5, pady=5, text="Res\nFill", font = "none 12 bold" , bg='#708090', fg='#e8e8e8', command=resfil)
-#resfil.grid(row=2, column=6,padx=5, pady=5)
+resfil = Button(frame4, padx=5, pady=5, text="Res\nFill", font = "none 12 bold" , bg='#708090', fg='#e8e8e8', command=resfil)
+resfil.grid(row=2, column=6,padx=5, pady=5)
 
 exit = Button(mainframe, text="Terminate\nRasponics", font = "Helvetica 12 bold", bg='#708090', fg='#C51A4A', command=root.destroy)
 exit.grid(row=4, column=1)
@@ -215,6 +215,11 @@ canvas.create_rectangle(50, 100, 1, 200, width=5, fill='blue')
 canvas = Canvas(frame, width=50, height=200, bg='black', highlightbackground='black')
 canvas.grid(row=2, column=7)
 canvas.create_rectangle(50, 100, 1, 200, width=5, fill='blue')
+
+canvas = Canvas(mainframe, width = 150, height = 50)  
+canvas.grid(row=3, column=0)  
+img = ImageTk.PhotoImage(Image.open("Power RPI.png"))
+canvas.create_image(10, 10, anchor=W, image=img) 
 
 #nutrient Management
 canvas = Canvas(frame2, width=50, height=200, bg='black', highlightbackground='black')
