@@ -45,3 +45,6 @@ I (David), am looking into an initiation splashscreen for the program itself, a 
 
 03112020
 Re-assigned pins for manual modes. Pins 7 and 13 don't work properly. Pin 7 doesn't turn on, while pin 13 turns on but will not turn off. both pins are not responding as designed. Furthermore, when PH UP button is pressed, the fan shim fan turns off...Perhaps a new fan will be required for this project to run properly? Will check and advise in the future. Will be looking into code for a physical shutdown momentary switch to turn off/turn on the Raspberry Pi. Discovered additional code for a Splash Screen during initial program start up. Will tinker with code for our needs.
+
+03122020
+Uploaded a folder with Logos. One is for placement within buttons, the other for branding within the program. Also uploaded example code for a splash screen. Folder contains 3 code examples.
