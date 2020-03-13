@@ -8,40 +8,40 @@ from PIL import ImageTk, Image
 #==============================Button Functionality==============
 pwm = None
 
-# GPIO5 = 5
-# GPIO7 = 7
-# GPIO8 = 8
-# GPIO10 = 10
-# GPIO11 = 11
-# GPIO12 = 12
-# GPIO15 = 15
-#
-# GPIO.setmode(GPIO.BOARD)
-# GPIO.setup(GPIO5, GPIO.OUT)
-# GPIO.setup(GPIO7, GPIO.OUT)
-# GPIO.setup(GPIO8, GPIO.OUT)
-# GPIO.setup(GPIO10, GPIO.OUT)
-# GPIO.setup(GPIO11, GPIO.OUT)
-# GPIO.setup(GPIO12, GPIO.OUT)
-# GPIO.setup(GPIO15, GPIO.OUT)
-#
-# GPIO5_state = True
-# GPIO7_state = True
-# GPIO8_state = True
-# GPIO10_state = True
-# GPIO11_state = True
-# GPIO12_state = True
-# GPIO15_state = True
+GPIO5 = 5
+GPIO7 = 7
+GPIO8 = 8
+GPIO10 = 10
+GPIO11 = 11
+GPIO12 = 12
+GPIO15 = 15
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(GPIO5, GPIO.OUT)
+GPIO.setup(GPIO7, GPIO.OUT)
+GPIO.setup(GPIO8, GPIO.OUT)
+GPIO.setup(GPIO10, GPIO.OUT)
+GPIO.setup(GPIO11, GPIO.OUT)
+GPIO.setup(GPIO12, GPIO.OUT)
+GPIO.setup(GPIO15, GPIO.OUT)
+
+GPIO5_state = True
+GPIO7_state = True
+GPIO8_state = True
+GPIO10_state = True
+GPIO11_state = True
+GPIO12_state = True
+GPIO15_state = True
 
 def pump():
     global GPIO5_state
     if GPIO5_state == True:
-        # GPIO.output(GPIO5, GPIO5_state)
+        GPIO.output(GPIO5, GPIO5_state)
         GPIO5_state = False
         ONlabel = Label(frame4, text="ON", font="none 12", bg='#384048', fg="green")
         ONlabel.grid(row=1, column=0)
     else:
-        # GPIO.output(GPIO5, GPIO5_state)
+        GPIO.output(GPIO5, GPIO5_state)
         GPIO5_state = True
         ONlabel = Label(frame4, text="OFF", font="none 12", bg='#384048',  fg="red")
         ONlabel.grid(row=1, column=0)
@@ -50,12 +50,12 @@ def pump():
 def fan():
     global GPIO7_state
     if GPIO7_state == True:
-        # GPIO.output(GPIO7, GPIO7_state)
+        GPIO.output(GPIO7, GPIO7_state)
         GPIO7_state = False
         OFFlabel = Label(frame4, text="ON", font="none 12", bg='#384048', fg="green")
         OFFlabel.grid(row=1, column=1)
     else:
-        # GPIO.output(GPIO7, GPIO7_state)
+        GPIO.output(GPIO7, GPIO7_state)
         GPIO7_state = True
         OFFlabel = Label(frame4, text="OFF", font="none 12", bg='#384048', fg="red")
         OFFlabel.grid(row=1, column=1)
