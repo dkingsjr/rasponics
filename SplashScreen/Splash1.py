@@ -23,6 +23,8 @@ class SplashScreen(Frame):
         # get screen width and height
         ws = self.master.winfo_screenwidth()
         hs = self.master.winfo_screenheight()
+        w = (useFactor and ws*width) or width
+        h = (useFactor and ws*height) or height
 
         # calculate position x, y
         x = (ws/2) - (w/2) 
