@@ -139,6 +139,8 @@ def resfil():
 root = Tk()
 root.title("RasPonics 1.0")
 root.configure(bg='#384048')
+#Removes frame from the window. Commented out for now due to development.
+#root.overrideredirect(True)
 
 #window dimensions(auto size)
 RWidth=root.winfo_screenwidth()
