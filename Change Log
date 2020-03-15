@@ -1,53 +1,56 @@
 Beginning annotations:
-Editing on this code has been on and off. There have been many different tests conducted to figure out functionality in the past. This change log will begin at the last remembered edits to code.
+David: Editing on this code has been on and off. There have been many different tests conducted to figure out functionality in the past. This change log will begin at the last remembered edits to code.
 
 02052020
-Began experimenting with buttons.
+David: Began experimenting with buttons.
 
 02062020
-Began experimenting with buttons.
+David: Experimented with buttons.
 
 02072020
-Created multiple buttons.
+David: Created multiple buttons.
 
 02082020:
-Created label buttons, Experimented with BG, FG, and font colors.
+David: Created label buttons, Experimented with BG, FG, and font colors.
 
 02092020
-Relocated button labels from on the button, to above the button. Experimented with function labels and colors
+David: Relocated button labels from on the button, to above the button. Experimented with function labels and colors
 inside the buttons. 
 
 02102020
-Organized buttons, added button panel name. Created frame for buttons.
+David: Organized buttons, added button panel name. Created frame for buttons.
 
 02112020
-Edited button frame. Added frame for gauges. Attempted to add additional button functions...FAILED.
+David: Edited button frame. Added frame for gauges. Attempted to add additional button functions...FAILED.
 
 02132020
-Added close button on line 118. Added globals and else/if for the rest of the functions. frame3 was created on line 14 for the button.
+Lucas: Added close button on line 118. Added globals and else/if for the rest of the functions. frame3 was created on line 14 for the button.
 
 02232020
-Removed closed button. Not required. tkinter includes a close button in the upper right hand corner of the window. Redundant and unnecessary code. Added preliminary sliders for adjustment of water flow control for proof of concept. Currently Non-operational. Planning on editing for use with pumps and such. Still working through inversion bugs using LED's on GPIO. Added additional frames for more "tidy" code. Still trying to figure out organizing into classes for better code organization.
+David: Removed closed button. Not required. tkinter includes a close button in the upper right hand corner of the window. Redundant and unnecessary code. Added preliminary sliders for adjustment of water flow control for proof of concept. Currently Non-operational. Planning on editing for use with pumps and such. Still working through inversion bugs using LED's on GPIO. Added additional frames for more "tidy" code. Still trying to figure out organizing into classes for better code organization.
 
 03022020
-Added GPIO functionality to buttons, redesigned the button frame contents entirely. Removed button labels on top of buttons and re-engineered to be a simple text label inside each corresponding button. Moved green/red "ON/OFF" labels from inside the buttons to above the buttons. GPIO pin assignments are temporary for the purpose of testing functionality. Buttons function as programmed. Added commented out section dividers with section descriptions until further notice or after we figure out how to divide the code into more manageable classes for cleanliness and ease of access. See read me for future planned developments and testing results from this code.
+David: Added GPIO functionality to buttons, redesigned the button frame contents entirely. Removed button labels on top of buttons and re-engineered to be a simple text label inside each corresponding button. Moved green/red "ON/OFF" labels from inside the buttons to above the buttons. GPIO pin assignments are temporary for the purpose of testing functionality. Buttons function as programmed. Added commented out section dividers with section descriptions until further notice or after we figure out how to divide the code into more manageable classes for cleanliness and ease of access. See read me for future planned developments and testing results from this code.
 
 03022020
 Changelog Supplemental
-To test the button code funtionality, LEDs were used in a mini breadboard with great [unexpected] success. All pin settings are temporary for the purpose of testing via LEDs. Final pin assignments for al devices TBD at a later date. The actual parts to be used with this project will be ordered within the next three (3) months or so (funding dependent) as to begin small scale functionality testing. Current testing being conducted: GUI slider functionality to adjust power settings for variable power parts (pumps, fans, heaters, etc(also tested with success)), Automated light on/off functionality using a TEMT6000 Photovoltaic light sensor, and breaking up the code into classes for ease of access and better organization (currently failing to execute this properly). Will be adding sliders tomorrow (03032020) and testing for functionality.
+David: To test the button code funtionality, LEDs were used in a mini breadboard with great [unexpected] success. All pin settings are temporary for the purpose of testing via LEDs. Final pin assignments for al devices TBD at a later date. The actual parts to be used with this project will be ordered within the next three (3) months or so (funding dependent) as to begin small scale functionality testing. Current testing being conducted: GUI slider functionality to adjust power settings for variable power parts (pumps, fans, heaters, etc(also tested with success)), Automated light on/off functionality using a TEMT6000 Photovoltaic light sensor, and breaking up the code into classes for ease of access and better organization (currently failing to execute this properly). Will be adding sliders tomorrow (03032020) and testing for functionality.
 
 03112020
-RE-Added Exit button due to improper GPIO cleansing. GPIO now cleared properly upon exit. Added Heater button and functions. Edited on/off labels above buttons.
+David: RE-Added Exit button due to improper GPIO cleansing. GPIO now cleared properly upon exit. Added Heater button and functions. Edited on/off labels above buttons.
 
 03112020
 Changelog Supplmental
 I (David), am looking into an initiation splashscreen for the program itself, a splashscreen for the Raspberry Pi initial startup, and looking into an auto-initialization option for the program which automatically starts the program after the Raspbian OS has loaded.
 
 03112020
-Re-assigned pins for manual modes. Pins 7 and 13 don't work properly. Pin 7 doesn't turn on, while pin 13 turns on but will not turn off. both pins are not responding as designed. Furthermore, when PH UP button is pressed, the fan shim fan turns off...Perhaps a new fan will be required for this project to run properly? Will check and advise in the future. Will be looking into code for a physical shutdown momentary switch to turn off/turn on the Raspberry Pi. Discovered additional code for a Splash Screen during initial program start up. Will tinker with code for our needs.
+David: Re-assigned pins for manual modes. Pins 7 and 13 don't work properly. Pin 7 doesn't turn on, while pin 13 turns on but will not turn off. both pins are not responding as designed. Furthermore, when PH UP button is pressed, the fan shim fan turns off...Perhaps a new fan will be required for this project to run properly? Will check and advise in the future. Will be looking into code for a physical shutdown momentary switch to turn off/turn on the Raspberry Pi. Discovered additional code for a Splash Screen during initial program start up. Will tinker with code for our needs.
 
 03122020
-Uploaded a folder with Logos. One is for placement within buttons, the other for branding within the program. Also uploaded example code for a splash screen. Folder contains 3 code examples.
+David: Uploaded a folder with Logos. One is for placement within buttons, the other for branding within the program. Also uploaded example code for a splash screen. Folder contains 3 code examples.
 
 03132020
 Lucas: Imported Image/ImageTK from PIL for utilizing .png formatted files. Tkinter doesn't handle non ICO/GIF's well. Lines 32-35 added for reference, can be used in main .py to have custom tray icon. That same method should allow you to insert image into the canvas but it isn't working for me. Lines 48-50 are there when rest of the script works in case root.after doesn't function.
+
+03142020
+David: Added "root.overrideredirect(True))". This Removes frame from the window. Commented out for now for development purposes. uncomment if you wish to see how it looks..
